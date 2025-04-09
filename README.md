@@ -6,7 +6,7 @@
 This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
 
 
-<h2>Environments and Technologies Used</h2>
+*<h2>Environments and Technologies Used</h2>*
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
@@ -20,39 +20,13 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Item 1
 - Item 2
-- Item 3
-- Item 4
-- Item 5
 
-<h2>Azure Environment Setup Steps</h2>
-
-<p>
-<img src="[https://i.imgur.com/DJmEXEB.png](https://imgur.com/a/3A7jYqz)" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Begin by setting up the virtual environment in Microsoft Azure, create a Virtual Machine and name it "osticket-vm".  Be sure to choose at least 2cVPUs as we will be interating and installing various services that will require a reasonably-efficient VM.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
 
 <h2>Installation Steps</h2>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<p> First, log into your Micorosoft Azure account and create a Windows 10 Virtual Machine with at least 2vCPUs.
+![image](https://github.com/user-attachments/assets/518ba978-de9b-44e8-a61f-a6d7e915ef84)
+
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
