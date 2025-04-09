@@ -23,7 +23,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 
 <h2>Installation Steps</h2>
-![Screenshot 2025-04-09 at 2 12 38 AM](https://github.com/user-attachments/assets/79f31b8a-6b65-48dc-826a-17de4693dabf)
+[![Screenshot 2025-04-09 at 2 12 38 AM](https://github.com/user-attachments/assets/79f31b8a-6b65-48dc-826a-17de4693dabf)](https://imgur.com/a/2h2Gj1U)
 <p> First, log into your Micorosoft Azure account and create a Windows 10 Virtual Machine with at least 2vCPUs.
 ![image](https://github.com/user-attachments/assets/518ba978-de9b-44e8-a61f-a6d7e915ef84.png)
 
