@@ -3,7 +3,7 @@
 </p>
 
 <h1>osTicket - Prerequisites and Installation</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.  For purposes of demonstration & practicing with Microsoft Azure, the entirety of this tutorial will be taking place in a virtual machine on the cloud.  If you're installing on  a local machine, skip to step 2 and begin the tutorial there.<br />
+This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
 
 
 <h2>Environments and Technologies Used</h2>
@@ -28,11 +28,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - PHP Manager For IIS (v1.5)
 - VC Redist
 - Rewrite Module
-
+- <strong>Link to Installation File:</strong> https://drive.google.com/drive/folders/1Na1sFRC39mexXaobzKW4VAsLuCyz4muv?usp=sharing
 <h2>Installation Steps</h2>
 
 <p>
-0) Begin by collecting all necessary applications & make sure you are not missing any programs.<br />
+0) Begin by collecting all necessary applications & ensure you are not missing any prerequisite programs.<br />
   <br />
   <br />
 <img src="https://i.imgur.com/BZRDB1w.png" height="80%" width="100%" alt="Disk Sanitization Steps"/><br/>
@@ -74,7 +74,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <br />
 
 <p>
-4) Navigate to your prerequestites folder and install and enable both <strong>PHP Manager for IIS</strong> & the <strong>Rewrite Module</strong>. 
+4) Navigate to the prerequestites folder and install both <strong>PHP Manager for IIS</strong> & the <strong>Rewrite Module</strong>. 
   <br/>
   <br/>
 <img src="https://i.imgur.com/vMu6dKI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -88,7 +88,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img src="https://i.imgur.com/AV5LCR0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  <i>Note: It's important that the PHP folder is in this location as we are going to come back to this part for an executable file.  Be sure to double check before progressing to step 4.</i>
+  <strong><i>Note: It's important that the PHP folder is in this location specifically, eventually we will install PHP in this location and will use this specific directory to reference the PHP executable file.  If in future steps it seems like your website isn't active come back to this step and ensure its completed.</i></strong>
 </p>
 <br />
 <br />
@@ -96,14 +96,14 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <br />
 
 <p>
-6) We will be going back to the prerequisites folder to conduct additional instillations for back-end support of our osTicket system.  Install <strong>VC Redist</strong>.<br />
+6) Navigate to the prerequisites folder to complete additional instillations for back-end support of our osTicket system.  Install <strong>VC Redist</strong>.<br />
 <br />
 <br />
   <img src="https://i.imgur.com/zA7nQTH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><br />
   <br/>
   <br/>
   <br/>
-7) Install <strong>mySQL</strong>, be sure make sure the following are in place when going through both the installation & setup wizards.<br />
+7) Install <strong>mySQL</strong>, ensure the following settings are in place when going through both the installation & setup wizards.<br />
   7a) Choose Setup Type: <strong>Typical</strong> <br/>
     <br />
     <br />
@@ -120,13 +120,14 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   7c) Modify Security Settings: <strong>Pasword</strong> = "root"<br/>
   <br />
   <img src="https://i.imgur.com/szjPgy3.png" height="40%" width="40%" alt="Disk Sanitization Steps"/><br/>
+  <strong><i>Note: It's crucial that "root" or something you can easily remember is set as the password.  Otherwise, you'll be forced to start the entire process from scratch due to being unable to use MySQL.</i></strong>
     <br />
     <br />
 
 </p>
 
 <p>
-8) Navigate to <strong>Internet Information Services (IIS)</strong>and open the application as an administrator.  Then, navigate to <strong>PHP Manager</strong> and navigate to the PHP folder from <strong>Step 5</strong>.  Within this folder, select <strong>"php-cgi.exe"</strong> to ensure PHP Manager can find the executable file.<br />
+8) Navigate to <strong>Internet Information Services (IIS)</strong>and open the application as an administrator.  Then, navigate to <strong>PHP Manager</strong> and navigate to the PHP folder from <strong>Step 5</strong>.  Within this folder, select <strong>"php-cgi.exe"</strong>.<br />
   <br />
   <img src="https://i.imgur.com/b63ehHN.png" height="40%" width="60%" alt="Disk Sanitization Steps"/>
   <br />
@@ -149,38 +150,43 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   <br />
   
 <p>
-11) Now, we are going to install osTicket in place of this website we created, to do this we will navigate to the prerequisite file.  Within the prerequisite file, unzip the "osTicket-Installation-Files" folder.  If you didn't assemble a prerequisite file you can simply download the latest version of osTicket and follow along.<br /></p>
-  <p>
+11) Now, we are going to install osTicket in place of this website we created, to do this we will navigate to the prerequisite file.  Within the prerequisite file, unzip the "osTicket-Installation-Files" folder.<br />
+  <br />
+  <img src="https://i.imgur.com/OpQj8Zy.png" height="80%" width="100%" alt="Disk Sanitization Steps"/>
+</p>
+  <br />
+  <br />
+  <br />
 12) Extract this zip folder into a folder of your choice, but copy the "upload" folder into the directory <strong>(c:\inetpub\wwwroot)</strong>. Rename the <strong>"upload"</strong> folder <strong>"osTicket"</strong>.<br/>
   <br />
-<img src="https://i.imgur.com/4wpBeln.png" height="40%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/4wpBeln.png" height="60%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
   <br />
   <br />
   <br />
 
   <p>
-13) Go back into <strong>Information Internet Services (IIS)</strong>, refresh the web-server again as explained previously.  Navigate to <strong>Sites > Default > osTicket</strong> and confirm that osTicket is installed.<br />
+13) Go back into <strong>Information Internet Services (IIS)</strong>, refresh the web-server again as explained previously.  Navigate to <strong>Sites > Default > osTicket > Browse*.80(http)</strong> and confirm that osTicket is installed.<br />
 </p>
 <br />
 <p>
 <img src="https://i.imgur.com/1i65nFd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-<i>Note: If osTicket is not showing up, or you are getting an error message run through steps 2-6 before starting from scratch.  Common troubleshooting could include ensuring osTicket is properly named in the C drive, and ensuring prerequisite software is installed.</i>
+<strong><i>Note: If osTicket is not showing up, or you are getting an error message run through steps 2-12 before starting from scratch.  Common troubleshooting could include ensuring osTicket is properly named in the C drive, and ensuring prerequisite software is installed.</i></strong>
 </p>
   <br />
   <br />
   <br />
 
 <p>
-14) Notice how there are disabled extensions in the osTicket installation wizard.  Now, we are goign to activate <i> necessary </i> extensions so osTicket can function properly.<br />
+14) Notice the disabled extensions in the osTicket installation wizard.  Next, proceed to activate <i> necessary </i> extensions so osTicket can function properly.<br />
   <br />
   <img src="https://i.imgur.com/0ankb3Y.png" height="40%" width="60%" alt="Disk Sanitization Steps"/><br/>
     <br />
     <br />
     <br />
-15) Navigate to PHP Manager and select "Enable or disable an extension" and select the plugins that are listed on the website.<br />
+15) Navigate to PHP Manager and select <strong>"Enable or Disable an extension"</strong> and select the plugins that are listed on the website.  I'd recommend the list of extensions provided below at a minimum.<br />
   <br />
   <img src="https://i.imgur.com/NboGmin.png" height="40%" width="40%" alt="Disk Sanitization Steps"/><br/>
     <br />
@@ -189,13 +195,14 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   
 <p>
 16) Navigate to <strong>C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php</strong>. Modify the <strong>"ost-sampleconfig.php"</strong> to <strong>"ost-config.php"</strong><br/>
-  <i>Note: It's crucial that this <strong>"ost-config.php"</strong> file is labeled in this way exactly</i><br/>
+  <i>Note: It's crucial that this <strong>"ost-config.php"</strong> file is labeled exactly this way</i><br/>
   <br />
   <img src="https://i.imgur.com/gSfVy07.png" height="80%" width="80%" alt="Disk Sanitization Steps"/><br/>
     <br />
     <br />
     <br />
-17) Next, in the ost-config.php file disable inheritance by going Security > Advanced > Disable Inheritance <br/>
+17) Next, in the <strong>ost-config.php</strong> file disable inheritance by going <strong>Security > Advanced > Disable Inheritance</strong> <br/>
+  <br />
   <img src="https://i.imgur.com/YM5iLn0.png" height="40%" width="40%" alt="Disk Sanitization Steps"/><br/>
   <img src="https://i.imgur.com/sNo4pJ9.png" height="40%" width="60%" alt="Disk Sanitization Steps"/><br/>
     <br />
@@ -208,12 +215,13 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <img src="https://i.imgur.com/bZLaq40.png" height="40%" width="60%" alt="Disk Sanitization Steps"/><br/>
 <img src="https://i.imgur.com/mtKk5ja.png" height="40%" width="40%" alt="Disk Sanitization Steps"/><br/>
+<strong><i>Note: This is purely for demonstration purposes and to display how to alter permissions, I do not recommend this outside of a lab setting</strong></i>
   <br />
   <br />
   <br />
 19) Make sure that your principal has <strong>"full control</strong>.<br/>
 <br />
-<img src="https://i.imgur.com/qZcj7je.png" height="40%" width="60%" alt="Disk Sanitization Steps"/><br/>
+<img src="https://i.imgur.com/qZcj7je.png" height="40%" width="40%" alt="Disk Sanitization Steps"/><br/>
 </p>
   <br />
   <br />
@@ -224,7 +232,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>
 20) Download & Install <strong>Heidi SQL</strong>.<br/>
   <br />
-  <img src="https://i.imgur.com/xIkqm9o.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/xIkqm9o.png" height="60%" width="80%" alt="Disk Sanitization Steps"/>
     <br />
     <br />
     <br />
@@ -268,6 +276,12 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <br />
 <br />
 <br />
-
- 25)  If osTicket is properly installed you should be at the point where you can access both the <strong>Admin</strong> and <strong>User</strong> panels.
-
+  <p>
+ 25)  If osTicket is properly installed you should be at the point where you can access both the <strong>Admin</strong> and <strong>User</strong> panels. <br />
+    <br />
+    <img src="https://i.imgur.com/qhxljCx.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+    <img src="https://i.imgur.com/xyTmmkA.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+  </p>
+<br />
+<br />
+<br />
