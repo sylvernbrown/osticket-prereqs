@@ -221,7 +221,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <img src="https://i.imgur.com/bZLaq40.png" height="40%" width="60%" alt="Disk Sanitization Steps"/><br/>
 <img src="https://i.imgur.com/mtKk5ja.png" height="40%" width="40%" alt="Disk Sanitization Steps"/><br/>
-<strong><i>Note: This is purely for demonstration purposes and to display how to alter permissions, I do not recommend this outside of a lab setting</strong></i>
+<strong><i>Note: This is purely for demonstration purposes and to display how to alter permissions, I do not recommend this configuration outside of a lab setting.</strong></i>
   <br />
   <br />
   <br />
