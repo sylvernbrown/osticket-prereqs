@@ -18,18 +18,16 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Microsoft Azure Subscription
-- Windows App for MacOS (To access the Azure VM)
-- Internet Information Services (IIS)
-- MySQL Server (version 5.5)
-- osTicket (version 1.15.8)
-- HeidiSQL (version 12.3.0.6589)
-- PHP (version 7.3.8)
-- PHP Manager For IIS (v1.5)
-- VC Redist
-- Rewrite Module
-- <strong>Link to Installation File:</strong> https://drive.google.com/drive/folders/1Na1sFRC39mexXaobzKW4VAsLuCyz4muv?usp=sharing
-<h2>Installation Steps</h2>
+- Collect Prerequisite Programs [<strong>Installation File:]</strong> https://drive.google.com/drive/folders/1Na1sFRC39mexXaobzKW4VAsLuCyz4muv?usp=sharing
+- Create & Log into Virtual Machines
+- Activation of Internet Information Services
+- Installation of PHP Manager for IIS & the Rewrite Module
+- Installation of VC Redist & MySQL
+- Register new PHP Version
+- Installation of osTicket
+- Enabling of disabled PHP Extensions
+- Modification of Group Policy
+- Creation of a new MySQL Database
 
 <p>
 0) Begin by collecting all necessary applications & ensure you are not missing any prerequisite programs.<br />
